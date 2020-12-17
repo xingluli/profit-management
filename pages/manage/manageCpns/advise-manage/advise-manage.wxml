@@ -1,0 +1,25 @@
+<!--pages/manage/manageCpns/advise-manage/advise-manage.wxml-->
+
+<view class="advise-manage-container">
+  <view class="advise-item" wx:for="{{adviseList}}" wx:key="id">
+    <view class="item-title">{{item.id}}</view>
+    <view class="item-content">{{item.content}}</view>
+    <van-button type="primary" size="mini" color="#209D4B" class="item-btn" data-index="{{item.id}}"
+      data-content="{{item.content}}" bind:click="onUpdate">修改</van-button>
+  </view>
+
+
+
+  <van-dialog use-slot title="修改建议" show="{{ showUpdate }}" show-cancel-button bind:confirm="onConfirm1" bind:close="onClose">
+
+    <input class="advise-input" placeholder="请输入修改的内容" bind:input="onInput1" value="{{inputValue1}}"></input>
+  </van-dialog>
+</view>
+
+<view class="add-advise-container">
+  <van-button type="primary" color="#209D4B" class="addAdvise-btn" bind:click="addAdvise">增加建议</van-button>
+  <van-dialog use-slot title="增加建议" show="{{ showAdd }}" show-cancel-button bind:confirm="onConfirm2" bind:close="onClose">
+
+    <input class="advise-input" placeholder="请输入建议内容" bind:input="onInput2" value="{{inputValue2}}"></input>
+  </van-dialog>
+</view>

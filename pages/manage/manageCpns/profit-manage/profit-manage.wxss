@@ -1,0 +1,18 @@
+/* pages/manage/manageCpns/profit-manage/profit-manage.wxss */
+
+
+.profit-commit{
+  margin-top: 10vh;
+  margin-left: 75vw;
+  background-color: #209D4B;
+  color: #fff;
+}
+
+.profit-commit-hover{
+  background-color: #154d44;
+}
+
+.van-stepper-container{
+  margin-top: 180rpx;
+  text-align: center;
+}

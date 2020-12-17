@@ -1,0 +1,20 @@
+<!--pages/manage/manageCpns/user-manage/user-manage.wxml-->
+
+<view class="add-User-container">
+  <view class="btn-container">
+    <van-button type="primary" color="#209D4B" class="addUser-btn" bind:click="addUser">添加用户</van-button>
+  </view>
+  
+  <van-dialog use-slot title="添加用户" show="{{ showAdd }}" show-cancel-button bind:confirm="onConfirm"
+    bind:close="onClose">
+    <view class="userName">
+      <view class="add-user-title">账号:</view>
+      <input class="advise-input" placeholder="请输入账号" bind:input="onInput1" value="{{user_name}}"></input>
+    </view>
+    <view class="password">
+      <view class="add-user-title">密码:</view>
+      <input class="advise-input" placeholder="请输入密码" bind:input="onInput2" value="{{password}}"></input>
+    </view>
+    
+  </van-dialog>
+</view>

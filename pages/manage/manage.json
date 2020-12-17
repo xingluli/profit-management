@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "w-tab-control": "/components/w-tab-control/w-tab-control",
+    "advise-manage": "/pages/manage/manageCpns/advise-manage/advise-manage",
+    "profit-manage": "/pages/manage/manageCpns/profit-manage/profit-manage",
+    "user-manage": "/pages/manage/manageCpns/user-manage/user-manage"
+  }
+}

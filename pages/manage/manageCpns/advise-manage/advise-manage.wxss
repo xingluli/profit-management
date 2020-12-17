@@ -1,0 +1,36 @@
+/* pages/manage/manageCpns/advise-manage/advise-manage.wxss */
+
+.advise-manage-container{
+  margin: 40rpx 40rpx 0rpx 40rpx;
+  border: 1rpx solid #000;
+  border-bottom-width: 0;
+}
+
+.advise-item{
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx 0;
+  border-bottom: 1rpx solid #000;
+}
+
+.item-title{
+  margin-left: 10rpx;
+}
+
+.item-btn{
+  margin-right: 10rpx;
+}
+
+.advise-input{
+  padding-left: 10rpx;
+  margin: 50rpx 0;
+  border-bottom: 1px solid #999;
+}
+
+.add-advise-container{
+  margin: 100rpx 40rpx 0rpx 40rpx;
+  display: flex;
+  justify-content: center;
+}
+
+

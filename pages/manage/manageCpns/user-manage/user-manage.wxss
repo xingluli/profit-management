@@ -1,0 +1,27 @@
+/* pages/manage/manageCpns/user-manage/user-manage.wxss */
+.add-User-container{
+  margin: 800rpx 40rpx 0rpx 40rpx;
+}
+
+.btn-container{
+  display: flex;
+  justify-content: center;
+}
+
+.advise-input{
+  padding-left: 10rpx;
+  margin: 30rpx 0;
+  border-bottom: 1px solid #999;
+}
+
+.userName,.password{
+  padding-left: 20rpx;
+  display: flex;
+  justify-content: flex-start;
+  vertical-align: middle;
+
+}
+
+.userName,.password .add-user-title{
+  line-height: 110rpx;
+}

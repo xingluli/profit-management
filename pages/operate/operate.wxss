@@ -1,0 +1,62 @@
+/* pages/operate/operate.wxss */
+.operate-body{
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #333;
+
+}
+.body-item{
+  width: 49.5%;
+  display: flex;
+  border-bottom: 1px solid #333;
+  border-left: 1px solid #333;
+  padding: 30rpx 0;
+  background-color: #F0F3F6;
+}
+
+.operate-advise{
+  display: flex;
+  height: 200rpx;
+  border-bottom: 1px solid #333;
+  border-left: 1px solid #333;
+  background-color: #F0F3F6;
+  vertical-align: middle;
+}
+
+.operate-advise-title{
+  border-right: 1px solid #333;
+  line-height: 60rpx;
+  padding-right: 10rpx;
+}
+
+.advise-content-item{
+  display: flex;
+}
+
+.operate-foot{
+  display: flex;
+  justify-content: center;
+  margin-top: 200rpx;
+  flex-wrap: wrap;
+}
+
+.addForm,.selectGear,.selectAdvise{
+  margin-right: 10rpx;
+}
+
+.advise-input{
+  padding-left: 10rpx;
+  margin: 30rpx 0;
+  border-bottom: 1px solid #999;
+}
+
+.operate-step-container{
+  text-align: center;
+}
+
+.operate-advise-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+

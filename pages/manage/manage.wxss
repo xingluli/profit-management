@@ -1,0 +1,11 @@
+/* pages/manage/manage.wxss */
+.cloak{
+  width: 100vw;
+  height: 100vh;
+  background-color:#fff;
+  z-index: 9;
+}
+
+.manage-before{
+  margin-bottom: 100rpx;
+}

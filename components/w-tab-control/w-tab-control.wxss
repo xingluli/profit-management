@@ -1,0 +1,22 @@
+/* components/w-tab-control/w-tab-control.wxss */
+.tabs{
+  display: flex;
+  padding: 20rpx 0rpx;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background-color: #fff;
+  z-index: 8;
+}
+
+.tab-item{
+  flex: 1;
+  text-align: center;
+
+}
+
+.active{
+  color:#209D4B;
+  border-bottom:6rpx solid #209D4B;
+  padding:0rpx 24rpx 6rpx;
+}

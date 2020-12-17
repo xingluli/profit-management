@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "van-picker": "@vant/weapp/picker/index",
+    "van-stepper": "@vant/weapp/stepper/index"
+  }
+}

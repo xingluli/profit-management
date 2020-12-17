@@ -1,0 +1,95 @@
+<!--pages/operate/operate.wxml-->
+
+<view class="operate-container">
+  <view class="operate-body">
+    <view class="body-item">
+      <view>姓名：</view>
+      <view>{{user}}</view>
+    </view>
+    <view class="body-item">
+      <view>地址:</view>
+      <view>{{addr}}</view>
+    </view>
+    <view class="body-item">
+      <view>时间：</view>
+      <view>{{time}}</view>
+    </view>
+    <view class="body-item">
+      <view>期初库存：</view>
+      <view>{{startNum}}</view>
+    </view>
+    <view class="body-item">
+      <view>购进量：</view>
+      <view>{{purchaseNum}}</view>
+    </view>
+
+    <view class="body-item">
+      <view>期末库存：</view>
+      <view>{{endNum}}</view>
+    </view>
+    <view class="body-item">
+      <view>期间销量：</view>
+      <view>{{sales}}</view>
+    </view>
+    <view class="body-item">
+      <view>档位：</view>
+      <view>{{gear}}</view>
+    </view>
+    <view class="body-item">
+      <view>单条毛利：</view>
+      <view>{{profit}}</view>
+    </view>
+    <view class="body-item">
+      <view>毛利总额：</view>
+      <view>{{totalProfit}}</view>
+    </view>
+  </view>
+  <view class="operate-advise">
+    <text class="operate-advise-title">
+      指导建议
+    </text>
+    <view class="operate-advise-content">
+      <view class="advise-content-item" wx:for="{{selectAdvises}}" wx:key="id">
+        <view class="advise-content-title">●</view>
+        <view>{{item}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="operate-foot">
+    <van-button type="primary" color="#209D4B" class="addForm" bind:click="addForm">输入信息</van-button>
+    <van-dialog use-slot title="输入信息" show="{{show_form}}" show-cancel-button bind:confirm="onConfirm_form"
+      bind:close="onClose">
+      <input class="advise-input" placeholder="请输入姓名" bind:input="onInput_name" value="{{user}}"></input>
+      <input class="advise-input" placeholder="请输入地址" bind:input="onInput_addr" value="{{addr}}"></input>
+      <input class="advise-input" placeholder="请输入时间" bind:input="onInput_time" value="{{time}}"></input>
+      <input class="advise-input" placeholder="请输入期初库存" bind:input="onInput_start" value="{{startNum}}"></input>
+      <input class="advise-input" placeholder="请输入购进量" bind:input="onInput_purchase" value="{{purchaseNum}}"></input>
+      <input class="advise-input" placeholder="请输入期末库存" bind:input="onInput_end" value="{{endNum}}"></input>
+
+    </van-dialog>
+
+
+    <van-button type="primary" color="#209D4B" class="selectGear" bind:click="selectGear">选择档位</van-button>
+    <van-dialog use-slot title="选择档位" show="{{ show_gear }}" show-cancel-button bind:confirm="onConfirm_gear"
+      bind:close="onClose">
+
+      <view class="operate-step-container">
+        <van-stepper min="1" max="30" value="{{ gear }}" step="1" bind:change="onStepperChange" input-width="128rpx"
+          button-size="100rpx" />
+      </view>
+
+    </van-dialog>
+
+
+    <van-button type="primary" color="#209D4B" class="selectAdvise" bind:click="selectAdvise">选择建议</van-button>
+    <van-dialog use-slot title="选择建议" show="{{ show_advise }}" show-cancel-button bind:confirm="onConfirm_advise"
+      bind:close="onClose">
+      <van-checkbox-group value="{{ result }}" bind:change="onChange">
+        <van-checkbox name="{{item.id}}" wx:for="{{adviseList}}" wx:key="id">{{item.content}}</van-checkbox>
+      </van-checkbox-group>
+    </van-dialog>
+
+    <van-button  class="savePhoto" type="primary" color="#209D4B" bind:click='saveImageToPhotosAlbum'>保存图片</van-button>  
+  </view>
+</view>

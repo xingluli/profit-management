@@ -1,0 +1,17 @@
+<!--pages/manage/manage.wxml-->
+<view class="cloak" wx:if="{{isCloak}}"></view>
+<view>
+  <view class="manage-before"></view>
+  <w-tab-control 
+      titles="{{titles}}" 
+      bind:tabClick="handleClick"
+      class="w-tab-control">
+  </w-tab-control>
+	
+
+  <profit-manage wx:if="{{currentIndex == 0}}" profits="{{profits}}"></profit-manage>
+  <advise-manage wx:if="{{currentIndex == 1}}"></advise-manage>
+  <user-manage wx:if="{{currentIndex == 2}}"></user-manage>
+
+	
+</view>

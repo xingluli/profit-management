@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/login/login",
+    "pages/operate/operate",
+    "pages/manage/manage"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#209D4B",
+    "navigationBarTitleText": "客户盈利微模型",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/operate/operate",
+        "text": "操作",
+        "iconPath": "/assets/tabbar/operate.png",
+        "selectedIconPath": "/assets/tabbar/operate_active.png"
+      },
+      {
+        "pagePath": "pages/manage/manage",
+        "text": "管理",
+        "iconPath": "/assets/tabbar/manage.png",
+        "selectedIconPath": "/assets/tabbar/manage_active.png"
+      }
+  
+    ],
+    "selectedColor": "#209D4B"
+  },
+  "sitemapLocation": "sitemap.json"
+}

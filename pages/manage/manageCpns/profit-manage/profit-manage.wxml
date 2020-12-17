@@ -1,0 +1,16 @@
+<!--pages/manage/manageCpns/profit-manage/profit-manage.wxml-->
+
+<view class="profit-container">
+	<view>
+		<van-picker columns="{{ columns }}" bind:change="onChange" bind:confirm="onConfirm" />
+	</view>
+
+	<view class="van-stepper-container" >
+		<van-stepper value="{{ currentValue }}" step="0.01" decimal-length="{{ 2 }}" bind:change="onStepperChange" input-width="128rpx" />
+	</view>
+
+</view>
+
+<view class="profit-btn">
+	<button size="mini" class="profit-commit" hover-class="profit-commit-hover" bind:tap="profitCommit">提交</button>
+</view>

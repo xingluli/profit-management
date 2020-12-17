@@ -1,0 +1,63 @@
+/* pages/login/login.wxss */
+.login-container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+  font-family: 'MicroSoft YaHei';
+
+}
+
+.login-title{
+  color: #209D4B;
+  font-size: 50rpx;
+  margin-bottom: 100rpx;
+}
+
+.login-user,.login-password{
+  width: 500rpx;
+  height: 60rpx;
+  margin-top: -16rpx;
+  transform: translateY(50%);
+  padding-left: 60rpx;
+}
+
+.login-btn{
+  margin-top: 80rpx;
+  width: 100vw;
+  background-color: #209D4B;
+  color: #fff;
+  border-radius: 10rpx;
+}
+
+.login-btn-hover{
+  background-color: #154d44;
+}
+
+.login-body{
+  width: 100vw;
+  border-top:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+}
+
+.login-body-user{
+  border-bottom:1px solid #ccc;
+}
+.login-body-user,.login-body-password{
+  margin: 0 5vw;
+  display: flex;
+  height: 90rpx;
+}
+
+.login-user-title,.login-password-title{
+  width: 20vw;
+  line-height: 90rpx;
+}
+
+.logo{
+  width: 200rpx;
+  height: 200rpx;
+}

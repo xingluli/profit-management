@@ -1,0 +1,22 @@
+<!--pages/login/login.wxml-->
+<view class="login-container">
+        <image src="../../assets/images/logo.png" class="logo"></image>
+        <view class="login-title">客户盈利微模型</view>
+        <view class="login-body">
+                <view class="login-body-user">
+                        <view class="login-user-title">用户名</view>
+                        <input class="login-user" placeholder="请输入用户名" value="{{userName}}"
+                                bind:input="userNameInput"></input>
+                </view>
+
+                <view class="login-body-password">
+                        <view class="login-password-title">密码</view>
+                        <input class="login-password" placeholder="请输入密码" value="{{password}}" type="password"
+                                bind:input="passwordInput"></input>
+                </view>
+
+        </view>
+
+
+        <button class="login-btn" style="width:95vw" hover-class="login-btn-hover" bind:tap="onLogin">登录</button>
+</view>
