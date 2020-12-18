@@ -4,6 +4,7 @@
     "van-dialog": "@vant/weapp/dialog/index",
     "van-stepper": "@vant/weapp/stepper/index",  
     "van-checkbox": "@vant/weapp/checkbox/index",
-    "van-checkbox-group": "@vant/weapp/checkbox-group/index"
+    "van-checkbox-group": "@vant/weapp/checkbox-group/index",
+    "painter":"/components/painter/painter"
   }
 }

@@ -45,7 +45,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.13.0",
 	"appid": "wx103405e65d430a6f",
-	"projectname": "miniprogram-1",
+	"projectname": "profit-management",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

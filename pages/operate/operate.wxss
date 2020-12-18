@@ -1,62 +1,109 @@
 /* pages/operate/operate.wxss */
-.operate-body{
+/* .operate-container {
+  z-index: 90;
+  position: fixed;
+  left: 0;
+  top: 0;
+} */
+.padding10 {
+  padding: 15rpx;
+}
+
+.padding-top20 {
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+
+.scroll-dialog {
+  max-height: 300px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.operate-body {
   display: flex;
   flex-wrap: wrap;
   border-top: 1px solid #333;
-
 }
-.body-item{
+.body-item {
   width: 49.5%;
   display: flex;
   border-bottom: 1px solid #333;
   border-left: 1px solid #333;
   padding: 30rpx 0;
-  background-color: #F0F3F6;
+  background-color: #f0f3f6;
 }
 
-.operate-advise{
+.operate-advise {
   display: flex;
-  height: 200rpx;
+  /* height: 200rpx; */
   border-bottom: 1px solid #333;
   border-left: 1px solid #333;
-  background-color: #F0F3F6;
+  background-color: #f0f3f6;
   vertical-align: middle;
 }
 
-.operate-advise-title{
+.operate-advise-title {
   border-right: 1px solid #333;
   line-height: 60rpx;
   padding-right: 10rpx;
 }
 
-.advise-content-item{
+.advise-content-item {
   display: flex;
 }
 
-.operate-foot{
+.operate-foot {
   display: flex;
   justify-content: center;
   margin-top: 200rpx;
   flex-wrap: wrap;
 }
 
-.addForm,.selectGear,.selectAdvise{
+.addForm,
+.selectGear,
+.selectAdvise {
   margin-right: 10rpx;
 }
 
-.advise-input{
+.addForm,
+.selectGear,
+.selectAdvise,
+.sharePhoto {
+  z-index: 100;
+}
+
+.advise-input {
   padding-left: 10rpx;
   margin: 30rpx 0;
   border-bottom: 1px solid #999;
 }
 
-.operate-step-container{
+.operate-step-container {
   text-align: center;
 }
 
-.operate-advise-content{
+.operate-advise-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+.box_image {
+  position: absolute;
+  margin: 0 auto;
+  top: 0rpx;
+  width: 514rpx;
+  border-radius: 10rpx;
+  z-index: 99;
+}
+
+.box {
+  position: fixed;
+  height: 800rpx;
+  top: 5%;
+  left: 132rpx;
+  z-index: 9;
+  width: 514rpx;
+}
